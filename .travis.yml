@@ -1,1 +1,10 @@
 language: node_js
+node_js:
+  - "stable"
+before_install:
+  - "cd .."
+  - "git clone https://github.com/adamorlowskipoland/warsawjs-workshop-24-shopping-cart-api"
+  - "cd warsawjs-workshop-24-shopping-cart-api"
+  - "npm i"
+  - "npm run start &"
+  - "cd ../warsawjs-workshop-24-shiopping-cart"
